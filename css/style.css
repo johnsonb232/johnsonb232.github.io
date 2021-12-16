@@ -1,0 +1,681 @@
+/* CSS STYLE SHEET */
+
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* Media que reminder
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+
+
+ __________  Colors _________
+
+Light Blue #66D7D1
+Purple 	   #B480D5
+Green	   #71CD7A
+
+Button yellow #F4D35E
+
+White	   #ffffff
+Black	   #000000
+
+
+*/
+
+
+/* +++++++++++++ Typography ++++++++++++++++++*/
+
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+   color: #000000;
+   background-color:#66D7D1 ;
+}
+
+
+p{
+	font-size: 18px;
+
+}
+
+
+/* __________  H tags  _________*/
+
+h1 {
+	font-family: 'Spectral', serif; /* ------- Litte Ghost Brand Font*/
+	font-size: 52px;
+	font-weight: 400;
+}
+
+
+h2 {
+	font-size: 46px;
+}
+
+
+h3 {
+	font-size: 30px;
+	font-family: 'Spectral', serif; /* ------- Litte Ghost Brand Font*/
+	font-weight: 700;
+}
+
+
+h4 {
+	font-size: 34px;
+}
+
+
+/* (((((((((((((((((((((((((((((((((  INDEX CONTENT  ))))))))))))))))))))))))))))))))))))))) */
+
+/* ++++++++++++  Navigation ++++++++++++++++++
+
+
+https://stackoverflow.com/questions/30624709/css-html-navigation-and-logo-on-same-line/30624865 *code source*
+
+
+++++++++++++++++++*/
+
+.navigation-bar {
+    width: 100%;  /* i'm assuming full width */
+    height: 80px; /* change it to desired width */
+    position: fixed;
+    z-index: 50;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 15px; /* if you want it vertically middle of the navbar. */
+    margin-left: 30px;
+    float: left;  
+}
+
+.navigation-bar a {
+	text-decoration: none;
+	width: 231px;
+	height: 47px;
+	font-family: "Helvetica Neue";
+	font-size: 21px;
+	color: #fff;
+
+
+}
+
+
+.navigation-bar > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    height: 80px;        /* if you want it to take the full height of the bar */
+    line-height: 80px;    /* if you want it vertically middle of the navbar */
+}
+
+
+.navigation-bar li {
+	float: left;
+	margin-left: 18px;
+	margin-top: 30px;
+}
+
+.navigation-bar ul {
+	list-style: none;
+	padding: 0;
+	margin-left: 1000px;
+
+  }
+
+
+
+
+
+/* __________ Header style Media Query _________*/
+
+/*/ Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+	.logo {
+    display: none;
+	}	
+.navigation-bar ul {
+	list-style: none;
+	padding: 0;
+	margin-left: 45px;
+
+  }
+
+}
+
+/*/ Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+}
+
+/*/ Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+
+ }
+
+/*/ Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+
+ }
+
+
+* {
+	::before
+	::after
+		margin: 0;
+		padding: 0;
+		box-sizing: inherit;
+}
+
+/* #E3342F #38C172 #3490DC #F66D9B #F6993F 
+
+https://codepen.io/simevidas/pen/JbdJRZ 
+This helps to breakdown sticky to most basic function*/
+
+.stack {
+		top: 0;
+		font-size: 10rem;
+}
+
+.stack__card1 {
+	display: flex;
+	/*justify-content: center; */
+	align-items: center;
+	height: 100vh;
+	background-color: #66D7D1;
+	position: sticky;
+	margin: 0;
+	top: 0;
+	box-shadow: 0 -1px 3px #66D7D1;
+}
+
+.stack__card2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #B480D5;
+	position: sticky;
+	top: 0;
+	box-shadow: 0 -1px 2px #B480D5;
+}
+
+.stack__card3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #71CD7A;
+	position: sticky;
+	margin: 0;
+	top: 0;
+	box-shadow: 0 -1px 2px  #71CD7A;
+}
+
+.stack__card4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #63D3CD;
+	position: sticky;
+	margin: 0;
+	top: 0;
+	box-shadow: 0 -1px 2px #63D3CD;
+}
+
+
+
+
+
+/* +++++++++++++ Card 1 Hero Styling ++++++++++++++++++*/
+
+
+
+.stack__card1 object {
+	max-width: 300px;
+	margin: auto;
+}
+
+
+
+.stack__card1:hover object:hover {
+	opacity: 0.01;
+
+}
+
+#hero_text {
+	margin-top: 40px;
+
+}
+
+/* __________Hero Text style _________*/
+
+#hero_text h1 {
+	text-align: center;
+	color: #fff;
+
+}
+
+#hero_text span {
+	color: #B03B5F;
+	font-family: "Helvetica Neue";
+	font-weight: 700;
+
+}
+
+#hero_text:hover h1:hover  span:hover {
+	color: #B480D5;
+
+}
+/* +++++++++++++ Card 2 Location Styling ++++++++++++++++++*/
+
+
+#card2 {
+	padding-left: 20px;
+}
+#card2 p {
+	color: black;
+}
+
+
+#card2 p span {
+	font-weight: bold;
+}
+
+/* __________ Media Query _________*/
+
+/*/ Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+	#hero_text h1{
+		font-size: 30px;
+	}
+
+
+}
+
+/*/ Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+}
+
+/*/ Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+
+ }
+
+/*/ Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+
+ }
+
+/* __________ Location1 style _________*/
+
+#location1{
+	position: relative;
+	top: -60px;
+	left: 150px;
+	padding: 30px;
+	width: 459px;
+	height: 350px;
+	border-radius: 5px;
+	background: #66d7d1;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+#location1 button {
+
+	width: 30px;
+	height: 30px;
+	background: #f4d35e;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	border-radius: 0px;
+	border-style: none;
+	position: relative;
+	top:  350px;
+	right: 100px;
+
+
+	}
+
+#location1 span {
+	color: #B03B5F;
+	font-family: "Helvetica Neue";
+	font-weight: 700;
+}
+/* __________ Location2 style _________*/
+
+
+#location2{
+	justify-content: center;
+	position: relative;
+	top: 100px;
+	right: 100px;
+	padding: 30px;
+	width: 450px;
+	border-radius: 5px;
+	background: #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+
+/* __________ Media Query _________*/
+
+/*/ Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+	#location2{
+	position: relative;
+	padding: 30px;
+	width: 450px;
+
+	}
+	
+	#location1{
+	
+	top: 0px;
+	left: 0px;
+	padding: 30px;
+	width: 459px;
+	height: 350px;
+	border-radius: 5px;
+	background: #66d7d1;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+	
+}
+
+
+/*/ Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+}
+
+/*/ Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+
+ }
+
+/*/ Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+
+ }
+
+/* +++++++++++++ Card 3 About Styling ++++++++++++++++++*/
+
+#about {
+	padding: auto;
+	justify-content: center;
+	width: 762px;
+	height: 351px;
+	border-radius: 5px;
+	background: #b480d5;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+
+#about hr {
+	color: #ffffff;
+	width: 50%;
+	margin: auto;
+}
+
+#about .row {
+	justify-content: center;
+	margin-top: 30px;
+	text-align: center;
+}
+
+#about button {
+	position: relative;
+	top: -90px;
+	left: 400px;
+	width: 230px;
+	height: 45px;
+	background: #f4d35e;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 0px;
+	border-style: none;
+	font-size: 26px;
+	color: #000000;
+
+
+	}
+/* __________ Typography _________*/
+
+	#about p {
+	font-size: 21px;
+	margin-top: 20px;
+	color: #ffffff;
+	}
+	
+	#about h3 {
+	color: #ffffff;
+	}
+
+	#about p span {
+	color: #B03B5F;
+	font-family: "Helvetica Neue";
+	font-weight: 700;
+}
+
+
+/* __________ Media Query _________*/
+
+/*/ Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+
+	
+
+
+}
+
+/*/ Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+}
+
+/*/ Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+
+ }
+
+/*/ Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+
+ }
+
+/* +++++++++++++ Card 4 Products Styling ++++++++++++++++++*/
+
+.stack__card4 .row {
+	--bs-gutter-x: 0;
+	justify-content: center;
+	text-align: center;
+}
+
+
+.card {
+	margin: 20px;
+	max-width: 250px;
+	min-height: 400px;
+	background-color: #B480D5;
+	border-style: none;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+	border-radius: 0;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+
+/* __________ Typography _________*/ 
+.stack__card4 p {
+	margin-top: 30px;
+	font-size: 23px;
+	color: #ffffff;
+	
+}
+
+.stack__card4 h3 {
+	color: #ffffff;
+	margin-bottom: 40px;
+	font-size: 40px;
+}
+
+
+
+
+
+footer {
+	position: relative;
+	top: 70px;
+	width: 100%;
+	color: #000000;
+	text-align: center;`
+}
+
+#ft p {
+	font-size: 12px;
+}
+
+
+
+
+/* (((((((((((((((((((((((((((((((((  INTERIOR CONTENT  ))))))))))))))))))))))))))))))))))))))) */
+
+#product-content {
+	margin-top: 120px;
+}
+
+
+/* +++++++++++++ Carousel Style ++++++++++++++++++*/
+
+
+/* +++++++++++++ Product Description Card Style ++++++++++++++++++*/
+
+#product-description{
+	position: relative;
+	padding: 30px;
+	width: 600px;
+	height: 230px;
+	border-radius: 5px;
+	background: #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+#product-description h3 {
+	font-size: 25px;
+
+}
+
+#product-description span {
+	color: #B03B5F;
+	font-family: "Helvetica Neue";
+	font-weight: 700;
+}
+
+/* +++++++++++++ Product Location Card Style ++++++++++++++++++*/
+
+
+#product-location {
+	position: relative;
+	top: 350px;
+	left: 700px;
+	padding: 30px;
+	width: 250px;
+	height: 250px;
+	border-radius: 5px;
+	background: #B480D5;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+
+
+#product-location h3 {
+	font-size: 25px;
+	color: #ffffff;
+}
+
+#product-location ul {
+	list-style: none;
+	padding: 0;
+
+
+  }
+
+ #product-location a {
+  	text-decoration: none;
+	width: 231px;
+	height: 47px;
+	font-family: "Helvetica Neue";
+	font-size: 20px;
+	color: #fff;
+
+  }
+
+
+ #product-location hr {
+ 	color: #ffffff;
+ }
+
+/* __________ Hover _________*/ 
+
+
+ #product-location:hover ul:hover  li:hover a:hover {
+ 	background-color: #F4D35E;
+	color: #B03B5F;
+	font-family: "Helvetica Neue";
+	font-weight: 700;
+}
+
+
+	#product-location {
+	position: absolute;
+	
+	}
+
+#product-description{
+	position: relative;
+	padding: 30px;
+	width: 600px;
+	height: 230px;
+	border-radius: 5px;
+	background: #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+#product-description h3 {
+	font-size: 25px;
+ }
+
+
